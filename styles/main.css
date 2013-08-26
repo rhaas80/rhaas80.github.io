@@ -3,7 +3,7 @@
 
 /* reset */
 html {overflow-y:scroll;}
-body {font-family:Verdana, Geneva, sans-serif;}
+body {font-family:Verdana, Geneva, sans-serif; font-size: .8em;}
 blockquote, q {quotes: none;}
 blockquote:before, blockquote:after, q:before, q:after {content: '';content: none;}
 /* remember to define focus styles! */
@@ -78,7 +78,7 @@ a:active {color:#006666; text-decoration:underline;}
 
 
 /* type styles */
-p, li {font-family:Verdana, Geneva, sans-serif;color:#666; font-size: .8em; line-height: 180%;}
+p, li {color:#666; line-height: 180%;}
 p {margin-bottom:20px;}
 
 h1 {font-family:Georgia, "Times New Roman", Times, serif;font-size:20px; color: #006666; margin-bottom:18px;}
