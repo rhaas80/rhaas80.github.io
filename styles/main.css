@@ -1,0 +1,188 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* reset */
+html {overflow-y:scroll;}
+body {font-family:Verdana, Geneva, sans-serif;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after, q:before, q:after {content: '';content: none;}
+/* remember to define focus styles! */
+:focus {outline: 0;}
+/* reset END */
+
+sidebar {display:block;}
+
+/* main styles */
+
+#container {width: 960px; position: relative; margin: 0 auto; }
+
+
+header .cit {margin-top:10px; text-align:center;}
+header .banner {background: url(../images/body/background.gif) repeat-x 50% 50%; margin: 35px 0 0 0; text-align:center;}
+header .banner span a {color: #666; background-color: #FFF; font-family:Georgia, serif;font-size: 2.3em;text-decoration:none;letter-spacing: 1px;}
+header .banner span {padding: 0 30px 0 30px;}
+header .title {text-align: center; color: #009999; font-family:Georgia, "Times New Roman", Times, serif; font-size:1.2em; letter-spacing: 1px; margin: 15px 0 60px 0;}
+header .title a:link, header .title a:visited {color: #009999;text-decoration:none;}
+header .tapir {
+	position:absolute;
+	width:63px;
+	height:86px;
+	top:-4px;
+	right:0px;
+}
+header .seal {position:absolute; width:76px; height:76px;top:0px;left:0px;}
+
+nav {width: 200px; float:left;margin:20px 0 0 0px;}
+nav ul {list-style: none;}
+nav li {font-size: .9em;}
+#nav-main {margin-bottom: 30px; }
+#nav-main a {color: #333; font-family: Verdana, Geneva, sans-serif; font-size: .74em; font-weight: bold; text-decoration:none; line-height:190%;display:block; border-bottom: 1px solid #cccccc; padding:5px 0;}
+#nav-main a:hover {color: #009999; text-decoration:none;}
+#nav-main ul li a {border:none; margin-left: 20px;}
+
+#nav-main ul {display:none;}
+#about #nav-main ul.about, #people #nav-main ul.people, #seminars #nav-main ul.seminars, #contact #nav-main ul.contact {display:block;}
+
+section.home {width: 370px;float:left;margin-left:100px; }
+
+section.content-main {width: 700px;float:left;margin-left:25px; }
+section.content-main img {margin: 5px 7px 0 0;}
+section.content-main li {margin-left: 20px;}
+
+.content-main.item {margin-top: 18px;}
+
+div.newsevents {float: right;width: 210px; margin-top:10px;}
+div.newsevents li {list-style-type:none; margin-bottom: 10px;}
+
+sidebar section {margin-bottom: 15px;}
+
+div.footer-line {background: url(../images/body/background.gif) repeat-x 50% 50%; margin: 35px 0 0 0; text-align:center;}
+footer {
+	width: 960px;
+	background-image: url(../images/body/background.gif);
+	background-repeat: repeat-x;
+	background-position: center top;
+}
+footer .logos {width: 150px; float:left;}
+footer .copyright {width: 600px; float:left; font-family:Verdana, Geneva, sans-serif; font-size:.8em; color:#999999; padding-top:15px; padding-left:10px;}
+footer .copyright a {color: #999; text-decoration:none; line-height:150%;}
+footer .copyright a:hover {text-decoration:underline;line-height:150%;}
+footer .info {width: 80px; float:left;}
+
+
+/* link styles */
+a:link	{color:#009999; text-decoration:underline;}
+a:visited {color:#006666; text-decoration:underline;}
+a:hover	{color:#000; text-decoration:underline;}
+a:active {color:#006666; text-decoration:underline;}
+
+
+/* type styles */
+p, li {font-family:Verdana, Geneva, sans-serif;color:#666; font-size: .8em; line-height: 180%;}
+p {margin-bottom:20px;}
+
+h1 {font-family:Georgia, "Times New Roman", Times, serif;font-size:20px; color: #006666; margin-bottom:18px;}
+h2 {font-family:Georgia, "Times New Roman", Times, serif;font-size:15px; color: #333; margin-bottom:11px; margin-top:11px;}
+h3 {font-family:Georgia, "Times New Roman", Times, serif;font-size:15px; color: #006666; margin-bottom:10px; border-bottom: 1px solid #cccccc;}
+h4 {font-family:Georgia, "Times New Roman", Times, serif;font-size:14px; color: #666; margin-top:12px;}
+
+.name {font-family:Georgia, "Times New Roman", Times, serif;font-size:15px; margin-bottom:10px; margin-top:10px; font-weight:bold;}
+a.name:link {color:#666; text-decoration:none;font-weight:bold;}
+a.name:visited {color:#666; text-decoration:none;font-weight:bold;}
+a.name:hover {color:#666; text-decoration:underline;font-weight:bold;}
+a.name:active {color:#666; text-decoration:none;font-weight:bold;}
+
+/*list styles*/
+section.content-main ul, section.home ul {list-style-type: disc; margin: 5px 0px 5px 30px;}
+section.content-main li ul li, section.home li ul li {list-style-type: disc;margin: 5px 0px 5px 30px;}
+sidebar ul li, sidebar p {font-size: .7em;list-style-type: none; margin-bottom: 10px;}
+
+/*table styles*/
+table {border-left:1px solid #CCC; border-top:1px solid #CCC;}
+td {padding:5px; font-size: x-small; border-bottom:1px solid #CCC; border-right:1px solid #CCC;}
+th {padding:3px; background:#d4d4c4; text-align:left;font-size: x-small;}
+
+
+/*Other styles*/
+.fltrt {float: right; margin-left: 10px;}
+.fltlft {float: left; margin-right: 10px;}
+.clearfloat {clear: both; font-size: 1px; height: 0; line-height: 0;}
+.pix-border {border: 1px solid; padding: 5px;}
+.indent {padding:0px 0px 0px 25px;}
+.alert {color: #C00;}
+
+/* Slideshows  --------------------*/
+/* carousel */
+div.carousel div.carousel-holder img {border:none;padding:0;}
+.carousel li {list-style:none;}
+section.home .carousel ul {margin:0px;padding:0px;}
+section.home .carousel-holder ul li span {font-size: .8em;line-height: 1.5em;display: block;}
+.carousel{
+	width:360px;
+	padding-left:0px;
+	position:relative;
+	margin-bottom:80px;
+}
+.block .carousel h2{
+	background:none;
+	padding:0;
+	margin:0 0 4px -19px;
+	position:relative;
+}
+.carousel-holder{
+	width:360px;
+	height:263px;
+}
+.carousel-holder ul{
+	position:relative;
+	margin:0;
+	padding:0;
+	list-style:none;
+	float:left;
+	width:360px;
+	height:263px;
+}
+.carousel-holder ul li{
+	position:absolute;
+	top:0;
+	left:0;
+	width:360px;
+}
+.carousel-holder ul li img{
+	display:block;
+	margin:0 0 10px;
+}
+.switcher-holder{
+	height:1%;
+	overflow:hidden;
+	color:#858585;
+	font-size:1.08em;
+	line-height:1.4em;
+	padding:0 3px;
+}
+.carousel-holder ul li span{float:left;margin-top: 7px;}
+/* switcher */
+.switcher{
+	float:right;
+	margin:0;
+	padding:0;
+	list-style:none;
+	overflow:hidden;
+	position:relative;
+	z-index:5;
+}
+.switcher li{
+	float:left;
+	display:inline;
+	background:url(../images/body/divider8.gif) no-repeat 0 3px;
+	padding-left:5px;
+	margin-left:5px;
+}
+.switcher li:first-child{background:none;}
+.switcher li a{
+	color:#878787;
+	text-decoration:none !important;
+}
+.switcher li a:hover,
+.switcher li.active a{color:#7e1d7e;}
+

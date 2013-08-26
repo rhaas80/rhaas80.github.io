@@ -1,0 +1,159 @@
+\documentclass[12pt]{article}
+\usepackage[nohead,margin=1in]{geometry}
+\usepackage{mathptmx}
+\usepackage{url}
+\usepackage{color}
+\usepackage{aas_macros}
+
+\setlength{\parindent}{0cm}
+\pagestyle{plain}
+\renewcommand{\paragraph}[1]{\vskip 1.5ex\textbf{#1}\nopagebreak[4]\\[1ex]}
+\renewcommand{\refname}{\normalsize Publications}
+
+\newcommand{\todo}[1]{{\color{blue}TODO: #1}}
+\newcommand{\header}[1]{\textbf{#1}}
+
+\begin{document}
+\title{Curriculum vitae}
+\author{Roland Haas}
+\date{}
+\maketitle
+
+\paragraph{Personal information}
+\begin{tabular}{lp{0.75\linewidth}}
+Name &
+Roland Haas \\
+Date of birth &
+May 29th, 1980 \\
+Nationality &
+German, permanent resident of Canada \\
+Languages &
+English: fluent, German: native, French: basic \\
+Mailing address &
+TAPIR Mailcode 350-17 Caltech 1200 E California Blvd Pasadena, CA 91125 USA \\
+Phone number &
+(626) 395-6987 \\
+Email &
+\url{rhaas@tapir.caltech.edu} \\
+Web &
+\url{http://www.tapir.caltech.edu/~rhaas}
+\end{tabular}
+
+\paragraph{Education}
+\begin{tabular}{llllp{3.2cm}}
+&
+\header{Topic} &
+\header{Location} &
+\header{Advisor} &
+\header{Duration} \\
+Postdoc &
+Numerical Relativity &
+Caltech &
+Christian Ott &
+09/2011 -- present \\
+Postdoc &
+\parbox{3cm}{Numerical\\Astrophysics} &
+Georgia Tech &
+Pablo Laguna &
+08/2008 -- 09/2011 \\
+Ph.D. &
+Theoretical Physics &
+University of Guelph &
+Eric Poisson &
+02/2005 -- 08/2008 \\
+M.Sc. &
+Theoretical Physics &
+University of Guelph &
+Eric Poisson &
+09/2003 -- 02/2005 \\
+Diplom &
+Physics &
+Universit\"at Konstanz &
+ &
+Incomplete (left for Guelph)\\
+\end{tabular}
+
+\paragraph{Awards}
+\textbf{NSERC Postdoctoral Fellowship} (2010 -- 2012)\\
+\textbf{NSERC Postgraduate Scholarship} (2006)\\
+\textbf{Governor General's Academic Medal} (2005)
+Awarded by the Governor General to the student
+graduating with the highest average from a university program. \\
+\textbf{Ontario Graduate Scholarship} (2005)
+
+\paragraph{Services}
+\textbf{Referee} for PRD, PRL, and  CQG\\
+\textbf{Session chair} Numerical Simulations of Black holes and Neutron Stars,
+April APS meeting 2009, Washington DC. \\
+\textbf{Co-Maintainer} of the Einstein Toolkit, a collaborative NSF funded
+effort by LSU, RIT, Georgia Tech, and Caltech to provide robust simulation
+codes for numerical relativity and numerical astrophysics.\\
+\textbf{Organizer} of the relativity section of the weekly TAPIR seminars.
+
+\paragraph{Lectures}
+Tutorial session on writing an analysis module at the Spring Einstein Toolkit
+workshop attached to the April APS meeting in Atlanta, 2012.\\
+Tutorial session and introduction to the Einstein Toolkit at the Summer
+Einstein Toolkit workshop at the Caltech Gravitational-Wave Astrophysics School 2013.
+
+\paragraph{Invited talks}
+``Gravitational and electromagnetic signatures from the tidal disruption of
+stars'', Caltech, Pasadena. CaJAGWR Seminars.\\
+``Three-Dimensional General-Relativistic Hydrodynamic Simulations of Binary
+Neutron Star Coalescence and Stellar Collapse with Multipatch Grids'', UIUC,
+Urbana. Theoretical Astrophysics and General Relativity Seminar.
+
+\paragraph{Grants}
+\textbf{Co-principal investigator} of NSF XRAC grant TG-PHY100033 ``Simulations
+of Relativistic Astrophysical Systems''\\
+\textbf{Co-principal investigator} of NERSC project m152 ``Central Engine Models for Core-Collapse Supernovae and Long Gamma-Ray
+Bursts''\\
+
+\paragraph{Students mentored}
+\textbf{Jeffrey Kaplan} Graduate Student. Project: binary neutron star
+inspirals with SpEC.\\
+\textbf{Jonas Lippuner} Graduate Student. Project: binary neutron star
+inspirals with SpEC.\\
+\textbf{Sherwood Richers} Graduate Student. Project: Neutrino Transport in
+Supernova Simulations.\\
+\textbf{Hannah Klion} Summer Undergraduate Research Fellowship
+(SURF) student in 2012, now working as an undergraduate researcher with the
+group. Project: Gravitational Waves from Rapidly Rotating Core-Collapse
+Supernovae.\\
+\textbf{Cheol Woo (Peter) Park} Summer Undergraduate Research Fellowship
+(SURF) student in 2012. Project: black hole perturbation theory and white
+dwarf disruption by an intermediate mass black hole.
+\textbf{Cutter Coryell} Summer Undergraduate Research Fellowship
+(SURF) student in 2013. Project: Testing Fully Dynamical Adaptive Mesh
+Refinement in the Einstein Toolkit.
+
+
+%.!gawk '/^@ARTICLE{/{print "\\nocite{"gensub("@ARTICLE{","","",gensub(",$","","",$0))"}"}' rhaaspub.bib 
+\nocite{2013arXiv1307.3476V}
+\nocite{2013ApJ...769...85S}
+\nocite{2013ApJ...768..115O}
+\nocite{2013arXiv1304.7787R}
+\nocite{2013arXiv1304.5544M}
+\nocite{2013PhRvD..87d1501Z}
+\nocite{2012arXiv1212.4837S}
+\nocite{2012arXiv1212.1191R}
+\nocite{2012arXiv1210.6674O}
+\nocite{2012PhRvD..86b4026O}
+\nocite{2012CQGra..29k5001L}
+\nocite{2012ApJ...749..117H}
+\nocite{2012ApJ...744...45B}
+\nocite{2011arXiv1112.3928H}
+\nocite{2011arXiv1112.3707H}
+\nocite{2011CQGra..28i4020B}
+\nocite{2010ApJ...715.1117B}
+\nocite{2007PhRvD..75l4011H}
+\nocite{2006PhRvD..74d4009H}
+\nocite{2005CQGra..22S.739H}
+\nocite{2013arXiv1307.5307T}
+\nocite{Haas:nsns}
+\newpage
+\bibliographystyle{hunsrt}
+\bibliography{rhaaspub}
+
+\end{document}
+
