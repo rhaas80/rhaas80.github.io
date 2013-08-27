@@ -1,0 +1,464 @@
+\documentclass[12pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[nohead,margin=1in]{geometry}
+%\usepackage{mathptmx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{url}
+\usepackage{color}
+\usepackage{aas_macros}
+
+\pagestyle{plain}
+
+\newcommand{\sun}{{\mathord\odot}}
+\newcommand{\code}[1]{\textsc{#1}}
+\newcommand{\aligo}{aLIGO}
+\newcommand{\ligo}{LIGO}
+\newcommand{\virgo}{VIRGO}
+\newcommand{\kagra}{KAGRA}
+\newcommand{\lisa}{eLISA/NGO}
+\newcommand{\ET}{Einstein Toolkit}
+\newcommand{\tapir}{TAPIR}
+\newcommand{\cactus}{\code{Cactus}}
+\newcommand{\todo}[1]{{\color{blue}TODO: #1}}
+%\renewcommand{\emph}[1]{\textbf{#1}}
+
+\begin{document}
+\title{Statement of Research Interests}
+\author{Roland Haas}
+\date{\today}
+\maketitle
+
+\section{Research interests}
+My main research interests lie in the field of computational astrophysics,
+working on the generation of gravitational waves by
+astrophysical systems and the analysis of these waves. My research interests
+include aspects of analytical
+relativity in particular black hole perturbation theory as well as
+semi-analytical aspects thereof. I am strongly interested in computer science,
+especially numerical techniques applicable to general relativistic
+magnetohydrodynamics. 
+
+I have worked on the gravitational and electromagnetic signatures of the
+disruption of white dwarfs by intermediate mass black
+holes~\cite{2012arXiv1212.4837S, 2012ApJ...749..117H},
+the signature of gas present in the final merger phase of
+supermassive black holes~\cite{2012ApJ...744...45B,2010ApJ...715.1117B}, extreme mass ratio
+inspirals~\cite{2011arXiv1112.3707H,2007PhRvD..75l4011H,2006PhRvD..74d4009H,2005CQGra..22S.739H,2013PhRvD..87d1501Z},
+binary neutron star mergers~\cite{Haas:nsns}, core
+collapse supernovae~\cite{2012arXiv1210.6674O,2012PhRvD..86b4026O}, 
+and developed multi-patch, adaptive mesh
+refinement codes for
+numerical magnetohydrodynamics~\cite{2012arXiv1212.1191R}. I am actively
+involved in developing and supporting the free, open-source Einstein
+Toolkit~\cite{2012CQGra..29k5001L}.
+
+We are at the brink of being able to directly detect the gravitational waves
+predicted by General Relativity. With the advanced Laser Interferometer
+Gravitational-Wave Observatory (\aligo{}) scheduled to come
+on-line in 2014~\cite{advLIGO:Web}, there is great need to model the sources of
+gravitational waves that \ligo{} will detect. 
+Only by comparing to model waveforms will we be able to extract the
+gravitational wave signal from \ligo{'s} detector noise.
+These detections, together with
+electromagnetic observations of similar events, promise to offer answers to
+some of the most exciting questions in astrophysics. Are neutron star --
+neutron star mergers and black hole -- neutron star mergers sources for short
+hard gamma ray bursts?  How does the unknown equation of state of nuclear
+matter affect the merger and what microphysics governs matter at
+super-nuclear densities? Are nuclear accretion disks sites of $r$-process
+nucleosynthesis? All of these questions require that the system be accurately
+modelled and simulated using state of the art, highly parallel codes that
+included complex multi-physics combining a general relativistic description of
+gravity with a realistic description of matter and radiation. 
+
+I have initiated collaborations both locally with researchers at Caltech and
+with researches at remote institutions to tackle these problems. These
+collaborations have been very fruitful in bringing together the varied talents
+that are necessary to develop the codes and technologies required for
+realistic simulations. 
+
+During my career I had the opportunity to collaborate with and co-advise
+graduate and undergraduate students and introduce them to scientific methods.
+I am currently collaborating with several grad-students at Caltech, being the
+primary contact person for one of them.  
+
+I am Co-PI to XSEDE grants of 9.5 million service hours and NERSC grants of
+6.5 million service hours. I am involved in the SXS collaboration's funding
+efforts to
+secure and continue funding from NASA, the Fairchild foundation and NSF. I was
+funded by a 2 year NSERC fellowship during 2010 -- 2012.
+
+\subsection{Binary neutron star mergers as sources of gravitational radiation}
+% NSNS review by Matt: http://adsabs.harvard.edu/abs/2010CQGra..27k4002D
+% NSNS LRR review by Josh: http://adsabs.harvard.edu/abs/2012LRR....15....8F
+Double binary neutron star systems are among the expected sources of
+gravitational waves detectable by
+\ligo{}, \virgo{}, and the Kamioka Gravitational Wave Detector
+(\kagra{})~(\cite{Anderson:2007km} and references therein).
+Such a double binary neutron star system forms out of a binary
+star system that
+survives throughout the evolution and supernova explosion of both of its
+constituent stars~\cite{Tauris:2003pf}. After formation the tight binary
+constantly emits predominantly quadrupolar gravitational waves. Eventually
+gravitational wave emission becomes the
+dominant source of orbital decay and drives the inspiral. To date this has been
+observed only indirectly for example 
+in the orbital decay of the Hulse-Taylor pulsar~\cite{Hulse:1975}. 
+Finally the neutron stars collide and either form
+a temporary hypermassive neutron star or directly collapse to a black
+hole (\cite{Faber:2012rw} and references therein). During the final inspiral
+phase the system emits a
+chirp-like gravitational wave signal which increases in both frequency and
+amplitude as the stars approach each other. Once the stars come into
+contact the sinusoidal gravitational wave abruptly cuts off 
+while the combined object settles into an almost
+spheroidal
+shape. The massive (neutron star) remnant may then continue to emit
+gravitational waves as hydrodynamic instabilities redistribute matter to form a
+non-vanishing quadrupole moment until sufficient angular momentum has been
+shed via gravitational wave emission to allow collapse to a black 
+hole~\cite{Giacomazzo:2011cv}.  Finally the
+black hole settles down through quasinormal ringing. 
+
+The inspiral signal encodes information about the mass of the neutron star,
+while information about the neutron star equation of state is mostly
+accessible in the
+very late
+inspiral and early merger signal. Detecting the signal and in particular
+extracting
+system parameters using a matched filtering approach however requires an
+accurate model and numerical simulation of the inspiral and merger
+process~\cite{Anderson:2007km}. This is usually done in a two step process,
+where a few accurate but expensive full numerical simulations are used to
+calibrate a secondary set of semi-analytic templates~\cite{Bernuzzi:2012ci}.
+This is done as an
+efficiency measure because of the large cost associated with full
+simulations. Generally the secondary templates are more faithful if longer
+numerical waveforms are used to calibrate them. 
+
+%The numerical waveforms are not directly used in the filter pipeline as it is
+%\todo{jargon}
+%not feasible to cover the search space sufficiently densely with templates
+%using fully numerical waveforms. Instead waveforms from numerical relativity
+%are used to calibrate semi-analytical waveform templates computed for example
+%in the effective one body approach~\cite{Bernuzzi:2012ci}. These approximate
+%templates can
+%be generated much more efficiently and are used to densely conver the
+%search space.
+
+Recent work~\cite{Hinderer:2009ca,Read:2009yp} showed that the equation of
+state of neutron star
+matter has measurable influence on the tidal deformability of the neutron
+stars and through this leaves an imprint the the gravitational wave signal.
+Any template used for parameter extraction thus has to take the 
+equation of state of neutron star matter into account. 
+Unfortunately many current simulations~\cite{Bernuzzi:2012ci,
+Giacomazzo:2010bx,Baiotti:2011am,East:2012ww,Foucart:2012vn,Haas:nsns}
+assume
+a simplified $\Gamma$-law equation of state which is appropriate only during
+the inspiral phase. On the other hand those simulations that use a more realistic
+nuclear equation of state are very
+short~\cite{Hotokezaka:2011dh}, spanning only $5$ -- $7$ orbits.
+It is expected~\cite{Read:2009yp} that longer numerical simulations will allow
+for a more accurate estimation of equation of state parameters.
+
+In the simulating extreme spacetimes (SXS) collaboration~\cite{SXS:web}
+I am simulating the inspiral and merger of binary neutron
+stars.
+Using \code{SpEC}, we achieve high accuracy over long inspirals 
+by employing a hybrid scheme
+that uses efficient spectral methods to solve for the smooth spacetime part of
+the Einstein-matter system and a finite volume method to solve for the matter
+variables.
+
+We are currently capable of simulation $\gtrsim 22$ orbits which opens the
+window to infer information about the nuclear equation of state from the late
+inspiral signal.
+
+I am implementing
+adaptive mesh refinement in the code, increasing the resolution in the crucial
+central region of the simulation
+domain where the merging neutron stars are located to further increase this
+accuracy.
+
+\subsection{Binary neutron star mergers as progenitors of short gamma ray burst
+central engines} 
+The merger of double neutron star binaries and the accretion of a remnant disk
+on the central merger remnant is a leading
+candidate for the central engine in short gamma ray
+bursts~\cite{Tauris:2003pf}.
+During merger the
+neutron star material is heated and the cold equation of state 
+used in most current simulations becomes an increasingly poorer approximation
+of the equation of state of the neutron stars.
+This has the
+possibility of affecting the predicted lifetime of a hypermassive merger remnant and the
+geometry of the surrounding disk. The effect of varying the equation of state 
+was first studied
+in~\cite{Oechslin:2006uk}, \cite{Sekiguchi:2011zd}
+and~\cite{Hotokezaka:2013mm}.
+\cite{Oechslin:2006uk} compared results of simulations using different hot
+equations of state, using the conformally flat
+approximation to General Relativity, while \cite{Sekiguchi:2011zd} employed
+full numerical relativity but only a single hot equation of
+state. Very recently~\cite{Hotokezaka:2013mm} employed both general
+relativity, several (cold) equations of state and simulated inspirals lasting
+10 orbits.
+
+Once the stars have coalesced into a single object a jet of
+relativistic particles can be ejected along the spin axis.
+If the central object is a black hole, then strong magnetic fields
+driven by the magnetorotational instability in
+the disk extract energy from the spin of the black hole to launch the
+jet~\cite{Blandford1977}.
+An alternative jet mechanism drives the jet by neutrino annihilation that
+deposits energy via pair production above the poles and
+provides energy in this manner. The strong neutrino flux
+facilitates the formation of r-process elements in the disk and may
+drive a neutrino-rich disk wind~\cite{1999ApJ...525L.121F,Roberts:2010wh}.
+In both the central black hole and central hypermassive
+neutron star case, the magnetic field will collimate outflowing
+material along the magnetic field lines.
+% Rosswog: http://dx.doi.org/10.1086/312343 (NSNS)
+% Roberts: http://dx.doi.org/10.1088/0004-637X/722/1/954 (CCSNe)
+
+%Thus
+%binary neutron star mergers, together with core-collapse supernovae, are
+%cosmic incubators for nuclei heavier than $^{56}\mathrm{Fe}$.
+
+To facilitate this research I and collaborators are currently adding a more
+realistic neutrino
+transport scheme, as well as support for magnetohydrodynamics to our existing
+adaptive mesh refined multi-patch code~\cite{all:mpmhdnu}. This is a major
+step towards being able to simulate jet formation and disk evolution in a
+fully relativistic simulation. These simulations will significantly advance
+our understanding of the engine behind gamma ray bursts, pinning down the
+observational signatures of the various proposed source models. 
+
+\subsection{Core collapse supernovae}
+When a massive main sequence star nears the end of its lifetime, it burns
+lighter elements to iron in a thermonuclear reaction and forms a growing 
+iron core. Once the core reaches
+a critical mass, nuclear statistical equilibrium favours dissociation into
+$\alpha$-particles and free nucleons and the core begins to collapse in a
+runaway process.
+As the core collapses its density rises to nuclear densities where the
+equation of state suddenly stiffens providing a new hydrostatic equilibrium.
+The core however overshoots this equilibrium position and bounces back into
+the still infalling material. This launches a shock into the infalling
+material that is ultimately responsible for the supernova
+explosion. As the shock travels outwards, it dissipates energy via
+dissociation of heavy nuclei  as they fall through the shock front and
+via escaping neutrinos produced in electron capture reactions. Eventually
+the shock stalls and a successful explosion requires a means to revive the
+shock. 
+
+Currently there are two commonly accepted mechanisms for shock revival:
+(a) the neutrino mechanism~\cite{1985nuas.conf..422W} %,1990RvMP...62..801B,
+%1985nuas.conf..422W,2007PhR...442...38J}
+where the shock is revived through the energy deposited by
+neutrinos escaping from the proto-neutron star core in a gain layer under the
+shock front and (b) the magnetohydrodynamic mechanism which operates by
+converting the rotational energy of the core into magnetic field energy which
+drives the explosion through magnetic
+pressure~\cite{Janka:2012wk,Burrows:07b}.
+%http://arxiv.org/abs/1206.2503v1
+%all in Ott et all supernovae paper
+
+Modern 1d spherical studies~\cite{2001PhRvD..63j4003L} %,2002A&A...396..361R,
+%2003ApJ...592..434T, 2012ApJS..199...17S, 2006A&A...450..345K, 2010PhRvL.104y1101H}
+using full Boltzmann neutrino transport have shown that in spherical symmetry
+neutrino heating
+is not sufficient to revive the shock.
+A secondary mechanism is required
+to prolong the residency time of the infalling material in the gain region for
+it to absorb sufficient energy to revive the shock.
+Two possible mechanism have been observed in 2D axisymmetric
+simulations: the neutrino-driven convection~\cite{1994ApJ...435..339H} %,
+%1995ApJ...450..830B, 1996A&A...306..167J, 2000ApJ...541.1033F}
+which creates a negative entropy gradient in
+the gain region, thus promoting convective overturn of the material,
+and the standing accretion shock instability
+(SASI)~\cite{2003ApJ...584..971B} %, 2006ApJ...641.1018O, 2006A&A...457..963S,
+%2008ApJ...688.1159M, 2008ApJ...685.1069O, 2009ApJ...694..664M,
+%2012ApJ...761...72M, 2008ApJ...678.1207I}
+which leads to a large scale, sloshing type motion along the axis
+of symmetry, also increasing the residence time of material in the gain
+region. 
+
+In a recent paper~\cite{2012arXiv1210.6674O} we described a
+core collapse simulation simulating collapse and
+protoneutron star formation, and that for the first time employed all of full 3d numerics,
+high
+resolution, neutrino transport and a fully general relativistic
+treatment of gravity. This is in contrast to previous
+studies~\cite{Kuroda:2012nc,Nordhaus:2010uk,Mueller:2012ak} that
+employed a combination of a Newtonian approximation to General Relativity,
+simplified neutrino
+treatment, lower resolution or were using axisymmetric codes. Our work improves
+tremendously on these aspects, we extract, for the first time, 
+gravitational waves from full 3d general relativistic collapse and post-bounce
+core-collapse supernova simulations. We also verify the relative importance of
+the standing accretion shock instability and convective instabilities in 3d
+Cartesian simulations. 
+
+The simulation pushed the boundaries of what our
+simulation framework was able to handle both in size of the simulation as
+well as complexity of the physics involved, yielding output files of terabyte
+size that had to be postprocessed off-line to explore the dynamics of the
+core-collapse supernova engine.
+
+We are now working on improving our
+neutrino transport scheme by implementing a 2 moment, energy dependent scheme
+as well as incorporating ideal magnetohydrodynamics into our code. These
+improvements will allow us to make quantitative predictions of the neutrino
+signal to be expected from the next galactic supernova. 
+
+Having included magnetohydrodynamics we will simulate rapidly rotating core collapse
+supernovae as well, thereby obtaining prediction for the neutrino and
+gravitational wave signal for this revival mechanism as well. Provided the
+neutrino signal of the two explosion channels is as distinctive as the
+gravitational wave signal~\cite{2012arXiv1210.6674O} observations of
+gravitational waves and/or neutrino signals may well allow us to distinguishing
+between the mechanisms.
+
+\subsection{Open source software development}
+
+The codes used
+for general relativistic magnetohydrodynamics simulations
+have grown beyond the point where a single researcher (or even research group)
+can
+develop them. Instead large collaborations bringing together physicists,
+computer scientists and applied mathematicians have formed to develop and
+maintain the
+codes~\cite{2012CQGra..29k5001L,SXS:web,astrocodelib:web}.
+
+Free, open source licensed software enables researchers to more easily
+share their work and combine efforts.
+%
+%Making codes available to the public not
+%only furthers experimentation with the code by users, thus leading to the
+%discovery of new applications for existing code, it can also increase a
+%code's reliability. Each new user adds another pair of eyes looking for
+%potential bugs, and indeed publishing code along with simulation results is
+%often the only way to enable verification of results of numerical
+%simulations. 
+%
+This avoids duplication of effort freeing scientists to concentrate on science
+rather than tool-building. 
+%
+Several groups have in the past compared results of their vacuum
+and hydrodynamics codes
+for identical physical setups~\cite{Babiuc:2007vr,
+Baiotti:2010ka}. Such comparisons, while useful, are hampered if codes are
+private and results cannot be reproduced. Open source software is in
+line with open science practices such as providing access to raw data from
+experiments and peer review of results. 
+
+From a practical point of view, open source software more easily allows for a
+separation of concerns, where computer scientists supply the computational
+infrastructure, and physicists the physics modules building on these.
+Different modules, developed by independent groups can benefit from using
+existing components~\cite{2012CQGra..29k5001L}. Postdocs and graduate students that
+move from one group to another do not lose access to codes they helped
+develop and can continue to contribute to science without interruption..
+New groups can more easily join the field if there are basic software
+components available, leading to a richer science as more scenarios are
+explored using the code. 
+
+I am strongly involved in the \ET{}
+collaboration~\cite{2012CQGra..29k5001L} which aims to
+provide an open source, stable, well maintained and documented code for 
+general relativistic magnetohydrodynamics simulations. The \ET{}
+is based on the \code{Cactus} framework and used by groups at Caltech,
+LSU, AEI, GaTech, RIT and others for their numerical simulations. The toolkit
+currently has 91 registered users from 44 institutions around the world, with
+regular releases of updates and code fixes every 6 months. 
+
+Indeed the core-collapse simulations we performed at Caltech are based on the
+toolkit and requirements of these simulations are a major driving factor in
+the development of the toolkit.
+
+Together with Christian Reisswig (Caltech) I worked on the publicly available
+multi-patch code \code{Llama}~\cite{Pollney:2009yz}.
+\code{Llama} provides a multi-patch framework for general relativistic
+magnetohydrodynamics which covers the simulation domain with multiple patches
+adapted to the symmetry of the problem. Typically a central Cartesian block
+capable of adaptive mesh refinement is surrounded by a set of inflated
+cube~\cite{Thornburg:2004dv} patches with logarithmic
+spacing in the radial coordinate and constant angular resolution. Such a
+patch system is ideally suited to compact binary and core-collapse simulations
+where the central region benefits from mesh refinement and where spherical
+or cylindrical symmetry is not a good approximation. In the outer wave zone on
+the other hand, spherical symmetry is a good approximation to the system
+dynamics and the use of a coordinate system adapted to this symmetry greatly
+improves speed and accuracy of the simulation. 
+
+\subsection{Extreme mass ratio inspirals}
+Mass segregation
+effects concentrate stellar mass black holes and other heavy objects  near the
+central massive black holes~\cite{1997MNRAS.284..318S,2000ApJ...545..847M} in
+galaxy cores. %,
+%2006ApJ...649...91F,2006ApJ...645.1152H}
+From there, scattering by
+other stars~\cite{2007CQGra..24R.113A}, 
+tidal disruption events~\cite{2005ApJ...631L.117M} and resonant
+relaxation~\cite{2006ApJ...645L.133H} %,2007MNRAS.379.1083G}
+moves compact objects onto eccentric trajectories along which the objects
+enters
+the strong field region around the central black hole 
+where gravitational wave emission dominates the orbital decay. 
+
+A possible future \lisa{} detector will detect such extreme mass ratio
+inspirals of a solar mass compact object into a supermassive black hole.
+During the
+inspiral \lisa{} will
+map the black hole spacetime
+in exquisite detail~\cite{AmaroSeoane:2012je}. 
+These mappings provide a test for the
+black hole uniqueness theorems of General Relativity as well as the chance to
+directly measure the mass of the supermassive black holes in the
+centre of galaxies~\cite{AmaroSeoane:2012je} to very high accuracy.
+Just as the
+waveforms contain information about the central object so do they encode the
+orbital parameters, and detection of extreme mass ratio inspiral signals thus offers
+a unique opportunity to learn about the dynamics governing dense stellar
+clusters. 
+
+%Due to the large mass difference between the primary's mass 
+%and the secondary's mass, these systems are amenable to black hole
+%perturbation techniques. 
+%In black hole perturbation theory the influence the
+%smaller object is treated as a
+%perturbation on top of the background spacetime of the supermassive black hole.
+%The inspiral is then described as a second order non-linear effect of the
+%smaller object interacting with the radiation it itself sources using a
+%combination of analytic and semi-analytic techniques.
+%Our understanding of the mechanism driving the
+%inspiral has greatly improved by developing practical methods to evaluate the
+%so called self-force responsible for it~\cite{Barack:01, Barack:2007we}
+%following pioneering work by Mino, Sasaki, Tanaka, Quinn and
+%Wald~\cite{mino:97,quinn:97}.
+%On the theoretical side, our understanding of the second
+%order perturbation theory required to predict the inspiral signal has improved
+%considerably with the work of~\cite{Pound:2012dk,Gralla:2012db}.
+
+%Recently~\cite{Huerta:2012zy} worked on extending
+%the methods developed for extreme mass ratio inspirals to intermediate mass
+%ratio systems, where the mass ratio is of order $10^{-3}$ and even to
+%comparable mass ratio systems. These studies aim at improving available 
+%template banks and reducing the need for time consuming fully generic
+%numerical simulations. 
+%
+There are currently efforts underway to compute
+inspiral waveforms using either full 3d simulations or by interpolating the
+self-force driving the inspiral from a
+table of force values computed along
+geodesics~\cite{Diener:2011cc, Warburton:2011fk}.
+
+\bibliographystyle{hunsrt}
+\bibliography{refs,rhaaspub}
+
+\end{document}
