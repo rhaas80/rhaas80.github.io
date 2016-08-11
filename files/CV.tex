@@ -1,0 +1,165 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,roman]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{orange}                             % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+%\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Roland}{Haas}
+\title{Curriculum vitae}                           % optional, remove / comment the line if not wanted
+\address{National Center for Supercomputing Applications\\
+University of Illinois at Urbana-Champaign\\
+1205 W. Clark St., MC-257}{Urbana IL 61801}{}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\phone[fixed]{+1~(217)~3004228}
+\email{rhaas@illinois.edu}                    % optional, remove / comment the line if not wanted
+\homepage{www.ncsa.illinois.edu/~rhaas}            % optional, remove / comment the line if not wanted
+%\social[linkedin]{rhaas80}                         % optional, remove / comment the line if not wanted
+%\social[twitter]{jdoe}                             % optional, remove / comment the line if not wanted
+\social[github]{rhaas80}                           % optional, remove / comment the line if not wanted
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Personal information}
+\cvitem{Name}{Roland Haas}
+\cvitem{Date of birth}{May 29\textsuperscript{th} 1980}
+\cvitem{Place of birth}{Herbolzheim}
+\cvitem{Nationality}{German, permanent resident of Canada}
+
+\section{Experience}
+\cventry{07/2016--current}{research programmer}{NCSA}{Urbana}{Advisor: Gabrielle Allen}{Numerical Relativity}
+\cventry{09/2014--07/2016}{Junior scientist / Postdoc}{Albert Einstein Insititute}{Potsdam}{Advisor: Alessandra Buonanno}{Numerical Relativity}
+\cventry{09/2011--08/2014}{Postdoctoral research fellow}{Caltech}{Pasadena}{Advisor: Christian Ott}{Numerical Relativity}
+\cventry{08/2008--09/2011}{Postdoctoral research fellow}{Georgia Tech}{Atlanta}{Advisor: Pablo Laguna}{Numerical astrophysics}
+
+\section{PhD thesis}
+\cvitem{title}{\emph{Self-force on point particles in orbit around a Schwarzschild black hole}}
+\cvitem{supervisors}{Eric Poisson, University of Guelph, Canada}
+%\cvitem{description}{We examine the motion of a point scalar or
+%electromagnetic charge in orbit around a Schwarzschild black hole. Similar to
+%the situation in quantum field theory, the field close to the particle
+%requires renormalization, separating a finite physical contribution from the
+%infinite renormalizable part. We implement a fourth order finite-difference
+%scheme to calculate the retarded field. Our code can handle both circular and
+%highly eccentric orbits around the black hole. }
+
+\section{Master thesis}
+\cvitem{title}{\emph{Mass loss of a scalar charge in cosmological spacetimes}}
+\cvitem{supervisors}{Eric Poisson, University of Guelph, Canada}
+%\cvitem{description}{In extension to prior work done by Burko, Harte and Poisson the behaviour of a scalar point charge in various cosmological spacetimes is studied. Charges placed on a comoving world line exhibit a time-dependent rest mass. We find two classes of spacetimes, in which the particle shows qualitatively different behaviour. In both classes the particle will initially radiate a part or all of its rest mass away.}
+
+\section{Languages}
+\cvitem{German}{native speaker}
+\cvitem{English}{fluent}
+\cvitem{French}{basic}
+
+\section{Computer skills}
+\cvitem{Programming Languages}{Fortran (77 and 90), C, C++, m68k assembly language,
+Perl, python, Tcl, awk, shell-scripting, basic html, \LaTeX}
+\cvitem{Parallel code frameworks}{MPI, OpenMP, basic CUDA}
+\cvitem{Application frameworks}{Cactus computational toolkit, SpEC, PETSc}
+\cvitem{Version control}{git, subversion, mercurial, darcs, cvs}
+\cvitem{Scientific software}{numpy, matplotlib, gnuplot, VisIt, Paraview, doxygen}
+\cvitem{Operating systems}{Linux (Debian, Ubuntu, RedHat), OSX, Windows
+(mostly XP, 95), AmigaOS}
+\cvitem{Infrastructure}{Deployment and maintenance of
+apache-based group website, MediaWiki, centralized git and subversion
+repositories including customized web interface for user and repository
+management using Submin, setup of mailing lists using mailman and exim, user
+account management}
+
+\section{Awards}
+\cvitem{2010--2012}{NSERC postdoctoral Fellowship  (USD 80,000)}
+\cvitem{2006--2008}{NSERC postgraduate scholarship  (CAD 41,000)}
+\cvitem{2005}{Ontario Graduate Scholarship  (CAD 15,000)}
+\cvitem{2005}{Governor General's Academic Medal {\small\emph{Awarded by the Governor General to the
+student graduating with the highest average from a university program}}}
+
+\section{Memberships}
+\cvitem{2014--current}{German Physical Society}
+\cvitem{2008--current}{American Physical Society}
+
+\section{Services}
+\cvitem{2008--current}{Maintainer of the Einstein Toolkit, a collaborative NSF funded effort by LSU, RIT,
+Georgia Tech, and Caltech to provide robust simulation codes for numerical relativity
+and numerical astrophysics with 96 registered users at 50 different groups.}
+\cvitem{2012--current}{Organizer of the relativity section of the weekly TAPIR seminars.}
+\cvitem{07/2013}{Organizer of the Einstein Toolkit Summer Workshop at Caltech, where all
+maintainer met to discuss future directions of the project.}
+\cvitem{2007--current}{Referee for PRD, PRL, and CQG.}
+\cvitem{04/2009}{Session chair Numerical Simulations of Black holes and Neutron Stars, April APS
+meeting, Washington DC.}
+
+\section{Lectures}
+\cvlistitem{Tutorial session on writing an analysis module at the Spring Einstein Toolkit workshop
+attached to the April APS meeting in Atlanta, 2012.}
+\cvlistitem{Tutorial session and introduction to the Einstein Toolkit at the Summer Einstein Toolkit
+workshop at the Caltech Gravitational-Wave Astrophysics School 2013.}
+
+\section{Invited talks}
+\cvlistitem{``Gravitational and electromagnetic signatures from the tidal
+disruption of stars'', Caltech, Pasadena. CaJAGWR Seminars.}
+\cvlistitem{``Three-Dimensional General-Relativistic Hydrodynamic Simulations
+of Binary Neutron Star Coalescence and Stellar Collapse with Multipatch
+Grids'', UIUC, Urbana.  Theoretical Astrophysics and General Relativity
+Seminar.}
+
+\section{Grants}
+\cvlistitem{Co-principal investigator of NSF XRAC grant TG-PHY100033 ``Simulations of Rel-
+ativistic Astrophysical Systems''}
+\cvlistitem{Co-principal investigator of NERSC project m152 ``Central Engine Models for Core-
+Collapse Supernovae and Long Gamma-Ray Bursts''}
+
+\section{Students mentored}
+\cvlistitem{Jeffrey Kaplan. Graduate Student. Project: binary neutron star inspirals with SpEC.}
+\cvlistitem{Jonas Lippuner. Graduate Student. Project: binary neutron star inspirals with SpEC.}
+\cvlistitem{Sherwood Richers. Graduate Student. Project: Neutrino Transport in
+Supernova Simulations.}
+\cvlistitem{Hannah Klion Summer. Undergraduate Research Fellowship (SURF) student in 2012,
+now working as an undergraduate researcher with the group. Project: Gravitational
+Waves from Rapidly Rotating Core-Collapse Supernovae.}
+\cvlistitem{Cheol Woo (Peter) Park. Summer Undergraduate Research Fellowship (SURF) stu-
+dent in 2012. Project: black hole perturbation theory and white dwarf disruption by an
+intermediate mass black hole.}
+\cvlistitem{Cutter Coryell. Summer Undergraduate Research Fellowship (SURF) student in 2013.
+Project: Testing Fully Dynamical Adaptive Mesh Refinement in the Einstein Toolkit.}
+
+\end{document}
+
+
+%% end of file `template.tex'.
+
