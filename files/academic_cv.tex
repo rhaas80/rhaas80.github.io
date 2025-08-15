@@ -6,11 +6,11 @@
 % available at http://www.latex-project.org/lppl/.
 
 
-\documentclass[11pt,a4paper,roman]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\documentclass[11pt,letterpaper,roman]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('letterpaper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
 
 % moderncv themes
-\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
 \moderncvcolor{orange}                             % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
 %\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
 %\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
 
@@ -26,15 +26,18 @@
 % personal data
 \name{Roland}{Haas}
 \title{Curriculum vitae}                           % optional, remove / comment the line if not wanted
-\address{National Center for Supercomputing Applications\\
-University of Illinois at Urbana-Champaign\\
-1205 W. Clark St., MC-257}{Urbana IL 61801}{}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
-\phone[fixed]{+1~(217)~300-4228}
-\email{rhaas@illinois.edu}                    % optional, remove / comment the line if not wanted
-\homepage{www.ncsa.illinois.edu/\textasciitilde{}rhaas}            % optional, remove / comment the line if not wanted
-\social[linkedin]{roland-haas}                      % optional, remove / comment the line if not wanted
-\social[github]{rhaas80}                           % optional, remove / comment the line if not wanted
+\address{Department of Physics \& Astronomy\\
+Vancouver Campus\\
+325 - 6224 Agricultural Road\\
+Vancouver, BC V6T 1Z1 \\}{}{}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\email{rhaas@mail.ubc.ca}                    % optional, remove / comment the line if not wanted
+\homepage{www.phas.ubc.ca/\textasciitilde rhaas}            % optional, remove / comment the line if not wanted
+\social[linkedin]{roland-haas}                         % optional, remove / comment the line if not wanted
+%\social[twitter]{jdoe}                             % optional, remove / comment the line if not wanted
 \social[bitbucket]{rhaas80}                           % optional, remove / comment the line if not wanted
+\social[github]{rhaas80}                           % optional, remove / comment the line if not wanted
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
 
 % AASTeX journal abbrevs
 \newcommand\aj{\textrm{AJ}}%        % Astronomical Journal 
@@ -118,17 +121,9 @@ University of Illinois at Urbana-Champaign\\
 %-----       resume       ---------------------------------------------------------
 \makecvtitle
 
-\section{Contact information}
-\cvitem{Name}{Roland Haas}
-\cvitem{Email}{rhaas@illinois.edu}
-\cvitem{Web}{https://www.ncsa.illinois.edu/\textasciitilde{}rhaas}
-\cvitem{Address}{National Center for Supercomputing Applications\newline
-1205 W. Clark St Mail Code 257\newline
-University of Illinois Urbana, IL 61801-2311\newline
-Phone: 217-300-4228}
-
 \section{Professional Experience}
-\cventry{07/2016--current}{Senior research programmer}{National Center for Supercomputing Applications, University of Illinois}{Urbana, IL}{}{Numerical Relativity}
+\cventry{04/2025--current}{Scientific Software Developer}{CHIME, University of British Columbia}{Vancouver, BC}{}{Computational Astronomy}
+\cventry{07/2016--04/2025}{Senior research programmer}{National Center for Supercomputing Applications, University of Illinois}{Urbana, IL}{}{Numerical Relativity}
 \cventry{09/2014--07/2016}{Junior scientist / Postdoc}{Albert Einstein Insititute}{Potsdam}{Advisor: Alessandra Buonanno}{Numerical Relativity}
 \cventry{09/2011--08/2014}{Postdoctoral research fellow}{Caltech}{Pasadena}{Advisor: Christian Ott}{Numerical Relativity}
 \cventry{08/2008--09/2011}{Postdoctoral research fellow}{Georgia Tech}{Atlanta}{Advisor: Pablo Laguna}{Numerical astrophysics}
@@ -144,61 +139,126 @@ Phone: 217-300-4228}
 Konstanz}{Konstanz}{Germany}{unfinished, left for Canada}
 \cventry{09/1990 --08/1999}{High school}{Scheffel Gymnasium}{Lahr}{Germany} {}
 
-\pagebreak
-\section{Professional Activities}
+\section{Research Interests and Areas}
+\cvlistitem{Numerical relativity}
+\cvlistitem{Relativistic (magneto-)hydrodynamics}
+\cvlistitem{Extreme mass ratio inspirals and self-force problems}
+\cvlistitem{Black hole perturbation theory}
+\cvlistitem{Gravitational and electromagnetic emission from mixed black
+hole—star systems}
+\cvlistitem{The Einstein Toolkit}
+\cvlistitem{Numerical techniques for mesh refinement, and elliptic problems}
 
-\cvitem{07/2023}{Lead organizer, Einstein Toolkit CSSI Working Workshop,
-Rochester Institute of Technology, Rochester, NY}
+\section{Grants and Awards}
+\subsection{Research grants}
+\cvitem{08/2024--current}{Principal investigator of NSF OAC grant 2411068
+``E=mc2 - Enabling Multimessenger astrophysics through Community-driven
+Cyberinfrastructure'' (USD 3,369,101, 4 yrs)}
+
+\cvitem{07/2023--current}{Co-Principal investigator of NSF OAC grant 2310548
+``Elements: An initial value solver for the era of multi-messenger
+astrophysics'' (USD 597,233, 3 yrs)}
+
+\cvitem{04/2020--current}{Principal investigator of NSF OAC grant 2004879
+``The Einstein Toolkit ecosystem: Enabling fundamental research in the era of
+multi-messenger astrophysics'' (USD 683,514, 4 yrs)}
+
+\cvitem{07/2016--06/2022}{Co-principal investigator of NSF OAC grant 1550514
+``Einstein Toolkit Community Integration and Data Exploration'' (USD 450,000, 6 yrs)}
+
+\subsection{Computer time grants}
+\cvitem{10/2020--current}{Principal investigator of NSF XRAC grant TG-PHY160053
+``Convergence of Numerical Relativity and Deep Learning for Gravitational Wave
+Astrophysics'' (USD 406,798, ongoing)}
+
+\cvitem{06/2016--12/2021}{Blue Waters ``Illinois'' allocations (USD 2.0 million)}
+
+\subsection{Awards and fellowships}
+\cvitem{2010--2012}{NSERC postdoctoral Fellowship  (USD 80,000)}
+\cvitem{2006--2008}{NSERC postgraduate scholarship  (CAD 41,000)}
+\cvitem{2005}{Ontario Graduate Scholarship  (CAD 15,000)}
+\cvitem{2005}{Governor General's Academic Medal {\small\emph{Awarded by the
+Governor General to the student graduating with the highest average from a
+university program}}}
+
+\section{Presentations}
+\cvitem{06/2024}{Presenter, North American Einstein Toolkit Workshop 2024,
+Louisiana State University, Baton Rouge, LA}
 
 \cvitem{07/2023}{Presenter, Einstein Toolkit Summer School,
 Rochester Institute of Technology, Rochester, NY}
 
-\cvitem{07/2022}{Lead organizer, Einstein Toolkit CSSI Working Workshop,
-University of Illinois, Urbana, IL}
-
-\cvitem{06/2022}{Co-organizer and presenter, Einstein Toolkit Summer School,
+\cvitem{06/2022}{Presenter, Einstein Toolkit Summer School,
 University of Idaho, Moscow, ID}
-
-\cvitem{07/2021}{Lead organizer, Einstein Toolkit Summer School, University of
-Illinois, Urbana, IL}
 
 \cvitem{08/2020}{Presenter, North American Einstein Toolkit Workshop,
 Louisiana State University, Baton Rouge, LA}
 
-\cvitem{09/2019}{Presenter and scientific organization committee member,
-European Einstein Toolkit Meeting, King's College London, London, UK}
+\cvitem{09/2019}{Presenter, European Einstein Toolkit Meeting, King's College
+London, London, UK}
 
 \cvitem{06/2019}{Presenter, North American Einstein Toolkit workshop,
 Rochester Institute of Technology, Rochester, NY}
 
-\cvitem{10/2018}{Co-organizer, Deep Learning for Multimessenger Astrophysics:
-Real-time Discovery at Scale workshop, University of Illinois, Urbana, IL}
-
 \cvitem{09/2018}{Presenter, European Einstein Toolkit Workshop,
 University of Lisbon, Lisbon, Portugal}
 
-\cvitem{07/2018}{Presenter and scientific organization committee member, 
+\cvitem{07/2018}{Presenter,
 North American Einstein Toolkit workshop, Georgia Tech, Atlanta, GA}
 
-\cvitem{06/2018}{Presenter and organization committee member, 
+\cvitem{06/2018}{Presenter,
 Mexican Einstein Toolkit school, Tecnológico de Monterrey, Guadalajaraa}
 
 \cvitem{10/2017}{Presenter, EU Einstein Toolkit 2017 \& EdFest, Universitat de
 les Illes Balears, Palma}
 
-\cvitem{07/2017}{Lead organizer of the EinsteinToolkit workshop at the NCSA /
-UIUC meeting in Urbana-Champaign}
-
 \cvitem{02/2017}{Participant, Workshop on MHD method in the Einstein Toolkit,
 Columbia University, New York, NY}
-
-\cvitem{10/2016}{Observer, ExaHyPE consortium meeting, LRZ,  Garching}
 
 \cvitem{06/2016}{Participant, Einstein Toolkit EU School and Workshop,
 University of Trento, Trento}
 
 \cvitem{08/2015}{Participant, ET Workshop 2015, University of Stockholm,
 Stockholm}
+
+\cvitem{10/2012}{Participant, ET Workshop Fall, Rochester Institute of
+Technology, Rochester, NY}
+
+\cvitem{04/2012}{Presenter, the EinsteinToolkit workshop at
+the APS meeting in Atlanta}
+
+\section{Academic Service}
+\subsection{Conference and summer schools}
+
+\cvitem{06/2023}{Co-Organizer, North American Einstein Toolkit Workshop,
+Louisiana State University, Baton Rouge, LA}
+
+\cvitem{07/2023}{Lead organizer, Einstein Toolkit CSSI Working Workshop,
+Rochester Institute of Technology, Rochester, NY}
+
+\cvitem{07/2022}{Lead organizer, Einstein Toolkit CSSI Working Workshop,
+University of Illinois, Urbana, IL}
+
+\cvitem{06/2022}{Co-organizer, Einstein Toolkit Summer School,
+University of Idaho, Moscow, ID}
+
+\cvitem{07/2021}{Lead organizer, Einstein Toolkit Summer School, University of
+Illinois, Urbana, IL}
+
+\cvitem{09/2019}{Scientific organization committee member,
+European Einstein Toolkit Meeting, King's College London, London, UK}
+
+\cvitem{10/2018}{Co-organizer, Deep Learning for Multimessenger Astrophysics:
+Real-time Discovery at Scale workshop, University of Illinois, Urbana, IL}
+
+\cvitem{07/2018}{Scientific organization committee member,
+North American Einstein Toolkit workshop, Georgia Tech, Atlanta, GA}
+
+\cvitem{06/2018}{Organization committee member,
+Mexican Einstein Toolkit school, Tecnológico de Monterrey, Guadalajaraa}
+
+\cvitem{07/2017}{Lead organizer of the EinsteinToolkit workshop at the NCSA /
+UIUC meeting in Urbana-Champaign}
 
 \cvitem{07/2015}{Local organizing committee member, CGWAS Caltech
 Gravitatioanl Wave Astrophysics School, Caltech, Pasadena, CA}
@@ -215,13 +275,8 @@ Gravitatioanl Wave Astrophysics School, Caltech, Pasadena, CA}
 \cvitem{2012--2014}{Organizer of the relativity section of the weekly TAPIR
 seminars.}
 
-\cvitem{10/2012}{Participant, ET Workshop Fall, Rochester Institute of
-Technology, Rochester, NY}
-
-\cvitem{04/2012}{Presenter and co-organizer of the EinsteinToolkit workshop at
+\cvitem{04/2012}{Co-organizer of the EinsteinToolkit workshop at
 the APS meeting in Atlanta}
-
-\cvitem{2011--2020}{Member, LIGO Science Collaboration}
 
 \cvitem{04/2009}{Session chair Numerical Simulations of Black holes and
 Neutron Stars, April APS meeting, Washington DC.}
@@ -230,327 +285,177 @@ Neutron Stars, April APS meeting, Washington DC.}
 funded effort by LSU, NCSA, RIT, Georgia Tech, and Caltech to provide robust
 simulation codes for numerical relativity and numerical astrophysics.}
 
+\subsection{Generic}
+\cvitem{02/2023--current}{NCSA representative on OpenMP Architecture review board}
+\cvitem{10/2016}{Observer, ExaHyPE consortium meeting, LRZ,  Garching}
+
+\subsection{Reviewer}
+\cvitem{2016--current}{Reviewer NSF, STFC}
 \cvitem{2007--current}{Referee for JOSS, PRD, PRL, and CQG.}
 
-\section{Grants and Awards}
-\cvitem{07/2023--current}{Co-Principal investigator of NSF OAC grant 2310548
-``Elements: An initial value solver for the era of multi-messenger
-astrophysics'' (USD 597,233, 3 yrs)}
-
-\cvitem{04/2020--current}{Principal investigator of NSF OAC grant 2004879
-``The Einstein Toolkit ecosystem: Enabling fundamental research in the era of
-multi-messenger astrophysics'' (USD 683,514, 4 yrs)}
-
-\cvitem{07/2016--06/2022}{Co-principal investigator of NSF OAC grant 1550514
-``Einstein Toolkit Community Integration and Data Exploration'' (USD 450,000, 6 yrs)}
-
-\cvitem{10/2020--current}{Principal investigator of NSF XRAC grant TG-PHY160053
-``Convergence of Numerical Relativity and Deep Learning for Gravitational Wave
-Astrophysics''}
-
-\cvitem{2010--2012}{NSERC postdoctoral Fellowship  (USD 80,000)}
-
-\cvitem{2006--2008}{NSERC postgraduate scholarship  (CAD 41,000)}
-
-\cvitem{2005}{Ontario Graduate Scholarship  (CAD 15,000)}
-
-\cvitem{2005}{Governor General's Academic Medal {\small\emph{Awarded by the
-Governor General to the student graduating with the highest average from a
-university program}}}
-
-\section{Research Interests and Areas}
-\cvlistitem{Numerical relativity}
-\cvlistitem{Relativistic (magneto-)hydrodynamics}
-\cvlistitem{Extreme mass ratio inspirals and self-force problems}
-\cvlistitem{Black hole perturbation theory}
-\cvlistitem{Gravitational and electromagnetic emission from mixed black
-hole—star systems}
-\cvlistitem{The Einstein Toolkit}
-\cvlistitem{Numerical techniques for mesh refinement, and elliptic problems}
-
 \section{Software}
-\cvlistitem{``Einstein Toolkit'', \url{https://einsteintoolkit.org}}
+\cvlistitem{``Einstein Toolkit'', \url{https://einsteintoolkit.org}, lead PI since 2019}
 \cvlistitem{``Cactus Computational Toolkit'', \url{https://cactuscode.org}}
-\cvlistitem{``Carpet mesh refinement driver'',
-\url{https://bitbucket.org/eschnett/carpet}}
-\cvlistitem{``CarpetX mesh refinement driver'',
-\url{https://github.com/eschnett/carpetx}}
-\cvlistitem{``Outflow'',
-\url{https://github.com/rhaas80/Outflow}}
-\cvlistitem{``ReadInterpolate'',
-\url{https://github.com/rhaas80/ReadInterpolate}}
-\cvlistitem{``GRHydro'',
-\url{https://bitbucket.org/einsteintoolkit/einsteinevolve}}
-\cvlistitem{``IllinoisGRMHD'',
-\url{https://bitbucket.org/zach_etienne/wvuthorns}}
-\cvlistitem{``Simulation Factory'',
-\url{https://bitbucket.org/simfactory/simfactory2}}
-\cvlistitem{``Eccentricity reduction for NR simulations'',
-\url{https://github.com/ncsagravity/eccred}}
-\cvlistitem{``SpEC'',
-\url{https://www.black-holes.org/code/SpEC.html}}
-\cvlistitem{``mpitar'',
-\url{https://git.ncsa.illinois.edu/rhaas/mpitar}}
-\cvlistitem{``parfu'',
-\url{https://github.com/ncsa/parfu_archive_tool}}
-\cvlistitem{``pa\_volume'',
-\url{https://github.com/rhaas80/pa_volume}}
-\cvlistitem{Einstein Toolkit Summer School 2021 website,
-\url{https://github.com/EinsteinToolkit/et2021uiuc}}
-\cvlistitem{Einstein Toolkit CI testing service,
-\url{https://github.com/EinsteinToolkit/tests/tree/scripts}}
+\cvlistitem{``Carpet mesh refinement driver'', \url{https://github.com/EinsteinToolkit/Carpet}}
+\cvlistitem{``CarpetX mesh refinement driver'', \url{https://github.com/EinsteinToolkit/CarpetX}}
+\cvlistitem{``Outflow'', \url{https://github.com/rhaas80/Outflow}}
+\cvlistitem{``ReadInterpolate'', \url{https://github.com/rhaas80/ReadInterpolate}}
+\cvlistitem{``GRHydro'', \url{https://bitbucket.org/einsteintoolkit/einsteinevolve}}
+\cvlistitem{``IllinoisGRMHD'', \url{https://bitbucket.org/zach_etienne/wvuthorns}}
+\cvlistitem{``Simulation Factory'', \url{https://bitbucket.org/simfactory/simfactory2}}
+\cvlistitem{``Eccentricity reduction for NR simulations'', \url{https://github.com/ncsagravity/eccred}}
+\cvlistitem{``SpEC'', \url{https://www.black-holes.org/code/SpEC.html}}
+\cvlistitem{``mpitar'', \url{https://git.ncsa.illinois.edu/rhaas/mpitar}}
+\cvlistitem{``parfu'', \url{https://github.com/ncsa/parfu_archive_tool}}
+\cvlistitem{``pa\_volume'', \url{https://github.com/rhaas80/pa_volume}}
+\cvlistitem{Einstein Toolkit Summer School 2021 website, \url{https://github.com/EinsteinToolkit/et2021uiuc}}
+\cvlistitem{Einstein Toolkit CI testing service, \url{https://github.com/EinsteinToolkit/tests/tree/scripts}}
+
+\section{Memberships}
+\cvitem{2025--current}{CHIME collaboration}
+\cvitem{2018--current}{Associate member, LISA Science Collaboration}
+\cvitem{2016--current}{Association for Computing Machinery}
+\cvitem{2018--2021}{Full member, LISA Science Collaboration}
+\cvitem{2014--2021}{Deutsche Physikalische Gesellschaft}
+\cvitem{2011--2020}{Member, LIGO Science Collaboration}
+\cvitem{2011--current}{Simulating eXtreme Spacetimes}
+\cvitem{2008--current}{Einstein Toolkit}
+\cvitem{2008--current}{American Physical Society}
+
+\section{Postdocs mentored}
+\cvlistitem{Alexandru Dima. Postdoc. Numerical relativity.}
+\cvlistitem{Deborah Ferguson. Postdoc. Numerical relativity and gravitational wave data analysis.}
 
 \section{Students mentored}
-\cvlistitem{Jeffrey Kaplan. Graduate Student. Project: binary neutron star inspirals with SpEC.}
+\subsection{Graduate Students}
+\cvlistitem{Annamalai P S. Graduate Student. Project: Light propagation and polarization effects in Kerr spacetime. University of Southern Denmark.}
+\cvlistitem{Domnica Garzon. Graduate Student. Project: Higher order modes in gravitational waves of eccentric, precessing binary black hole mergers.}
+\cvlistitem{Semih Kacmaz. Graduate Student. Project: Machine learning-driven conservative-to-primitive conversion.}
+\cvlistitem{Cheng-Hsin Cheng. Graduate Student. Project: Binary Black Hole Mergers in a Massive Scalar Field Cloud.}
+\cvlistitem{Maxwell Rizzo. Graduate Students. Project: Initial data reader for COCAL in the Einstein Toolkit.}
+\cvlistitem{Beyhan Karaka{\c s}. Graduate Student. Project: Effect of spin on binary neutron star mergers. University of Southampton.}
+\cvlistitem{Yufeng Luo. Graduate Student. Project: Stability of rotating neutron stars. University of Wyoming.}
+\cvlistitem{Shawn Rosofksy. Graduate Student. Project: binary neutron star inspirals with Cactus.}
 \cvlistitem{Jonas Lippuner. Graduate Student. Project: binary neutron star inspirals with SpEC.}
-\cvlistitem{Sherwood Richers. Graduate Student. Project: Neutrino Transport in
-Supernova Simulations.}
-\cvlistitem{Shawn Rosofksy. Graduate Student. Project: binary neutron star
-inspirals with Cactus.}
-\cvlistitem{Yufeng Luo. Graduate Student. Project: Stability of rotating
-neutron stars. University of Wyoming.}
-\cvlistitem{Hannah Klion. Summer Undergraduate Research Fellowship (SURF) student in 2012.
-Project: Gravitational
-Waves from Rapidly Rotating Core-Collapse Supernovae.}
-\cvlistitem{Cheol Woo (Peter) Park. Summer Undergraduate Research Fellowship
-(SURF) student in 2012. Project: black hole perturbation theory and white
-dwarf disruption by an intermediate mass black hole.}
-\cvlistitem{Cutter Coryell. Summer Undergraduate Research Fellowship (SURF) student in 2013.
-Project: Testing Fully Dynamical Adaptive Mesh Refinement in the Einstein Toolkit.}
-\cvlistitem{Dhara Mehta. Undergraduate researcher (SPIN) in 2017. Project:
-Automatically prune and archive simulation results produced by the Einstein
-Toolkit.}
-\cvlistitem{Wei Ren. Undergraduate researcher in 2017. Project: Extrapolating
-gravitational waves produced by the Einstein Toolkit to Scri+.}
-\cvlistitem{Daniel Johnson. Undergraduate researcher in 2017. Python
-Open-source Waveform ExtractoR: An open source, python package to monitor and
-post-process numerical relativity simulations.}
-\cvlistitem{Nikita Jain. Undergraduate researcher (SPIN) in 2017. Project: A GPU
-accelerated BSSN using GAMER.}
-\cvlistitem{Pablo Brubeck. Undergraduate research fellow in 2017. Project:
-Producing initial data for Cactus using LORENE.}
-\cvlistitem{Sibo Wang. Undergraduate researcher (SPIN) in 2017. Project: Using
-the Adams-Bashforth timestepper in Cactus.}
-\cvlistitem{Vedant Puri. Undergraduate researcher (SPIN) in 2017. Testing
-Scheduled Jacobi Relaxation methods for use in the Einstein Toolkit.}
-\cvlistitem{Debopam Sanyal. Undergraduate researcher (SPIN) in 2018. Comparing
-methods to extrapolate gravitational waves to Scri+}
-\cvlistitem{Nicolas White. Undergraduate researcher (INCLUSION) in 2018.
-Incorporating the ENIGMA gravitational wave model into LALsuite.}
-\cvlistitem{Sarah Habib. Undergraduate researcher (INCLUSION) in 2018, 2019.
-Gauge invariant measurement of eccentricity in gravitational waves,
-implementing a method to reduce eccentricity in simulations using the Einstein
-Toolkit.}
-\cvlistitem{Zeran Zhu. Undergraduate researcher (SPIN) in 2018. Generic output
-routines for the Einstein Toolkit.}
-\cvlistitem{Bing-Jyun (Johnny) Tsao. Undergraduate researcher (SPIN) in 2019.
-Solving the Poisson equation on irregular domains.}
-\cvlistitem{Brockton Brendal. Undergraduate researcher in 2019. Implementing
-methods to extrapolate gravitational waves to Scri+ in the NCSA POWER code.}
-\cvlistitem{Bridgette Davey. Undergraduate researcher (INCLUSION) in 2019.
-Processing numerical relativity simulation results for use by LIGO.}
-\cvlistitem{Joseph Adamo. Undergraduate researcher in 2019. Incorporating the
-ENIGMA gravitational wave model into LALsuite.}
-\cvlistitem{Kaiwen Zhang. Undergraduate researcher in 2019. Improving the
-quality of gravitational waves produced using the Einstein Toolkit.}
-\cvlistitem{Yufeng Luo. Undergraduate researcher in 2019. DataVault an opens
-storage infrastructure for results obtained using the Einstein Toolkit.}
-\cvlistitem{Robert Nagel. Undergraduate researcher in 2020. Constructing a
-uniform framework to characterize numerical relativity waveforms.}
-\cvlistitem{Nuocheng Pan. Undergraduate researcher in 2020. Improving the
-robustness of the ENIGMA waveform generation code.}
-\cvlistitem{Mohammed Jamil. Undergraduate researcher in 2020. Using GitHub
-action for continuous integration testing of the Einstein Toolkit.}
-\cvlistitem{Mingxin Li. Undergraduate researcher in 2021. Improving
-performance of characterizing numerical relativity waveforms.}
-\cvlistitem{Parth Tiyagi. Undergraduate researcher in 2021. On the fly
-training data generation for large scale artificial neural network based
-gravitational waveform searches.}
-\cvlistitem{Hrishikesh Kalyanaraman. Undergraduate researcher in 2022.
-Continuous integration testing for the Einstein Toolkit.}
-\cvlistitem{Nadine Kuo. Undergraduate researcher in 2022.
-Continuous integration testing for the Einstein Toolkit.}
-\cvlistitem{Lisa Leung. Undergraduate researcher in 2022.
-Improving quality of Einstein Toolkit binary black hole simulations.}
-\cvlistitem{Ashley Turner. Undergraduate researcher in 2023.
-Improving quality of Einstein Toolkit binary black hole simulations.}
-\cvlistitem{Chirag Maheshwari. Undergraduate researcher in 2023.
-Improving quality of Einstein Toolkit binary black hole simulations.}
+\cvlistitem{Sherwood Richers. Graduate Student. Project: Neutrino Transport in Supernova Simulations.}
+\cvlistitem{Jeffrey Kaplan. Graduate Student. Project: binary neutron star inspirals with SpEC.}
+
+\subsection{Undergraduate Students}
+\cvlistitem{Dhruv Srivastava. Undergraduate researcher in 2024.  Improving quality of Einstein Toolkit binary black hole simulations.}
+\cvlistitem{Amrutaa Vibho. Undergraduate researcher in 2023 -- 2025. Numerical relativity simulations of eccentric binary black hole mergers.}
+\cvlistitem{Chirag Maheshwari. Undergraduate researcher in 2023.  Automating simulation monitoring for the Einstein Toolkit.}
+\cvlistitem{Ashley Turner. Undergraduate researcher in 2023.  Adding an OpenPMD reader module to VisIt visualization tool.}
+\cvlistitem{Lisa Leung. Undergraduate researcher in 2022.  Improving quality of Einstein Toolkit binary black hole simulations.}
+\cvlistitem{Hrishikesh Kalyanaraman. Undergraduate researcher in 2022.  Continuous integration testing for the Einstein Toolkit.} \cvlistitem{Nadine Kuo. Undergraduate researcher in 2022.  Continuous integration testing for the Einstein Toolkit.}
+\cvlistitem{Parth Tiyagi. Undergraduate researcher in 2021. On the fly training data generation for large scale artificial neural network based gravitational waveform searches.}
+\cvlistitem{Mingxin Li. Undergraduate researcher in 2021. Improving performance of characterizing numerical relativity waveforms.}
+\cvlistitem{Mohammed Jamil. Undergraduate researcher in 2020. Using GitHub action for continuous integration testing of the Einstein Toolkit.}
+\cvlistitem{Nuocheng Pan. Undergraduate researcher in 2020. Improving the robustness of the ENIGMA waveform generation code.}
+\cvlistitem{Robert Nagel. Undergraduate researcher in 2020. Constructing a uniform framework to characterize numerical relativity waveforms.}
+\cvlistitem{Yufeng Luo. Undergraduate researcher in 2019. DataVault an opens storage infrastructure for results obtained using the Einstein Toolkit.}
+\cvlistitem{Kaiwen Zhang. Undergraduate researcher in 2019. Improving the quality of gravitational waves produced using the Einstein Toolkit.}
+\cvlistitem{Joseph Adamo. Undergraduate researcher in 2019. Incorporating the ENIGMA gravitational wave model into LALsuite.}
+\cvlistitem{Bridgette Davey. Undergraduate researcher (INCLUSION) in 2019.  Processing numerical relativity simulation results for use by LIGO.}
+\cvlistitem{Brockton Brendal. Undergraduate researcher in 2019. Implementing methods to extrapolate gravitational waves to Scri+ in the NCSA POWER code.}
+\cvlistitem{Bing-Jyun (Johnny) Tsao. Undergraduate researcher (SPIN) in 2019.  Solving the Poisson equation on irregular domains.}
+\cvlistitem{Zeran Zhu. Undergraduate researcher (SPIN) in 2018. Generic output routines for the Einstein Toolkit.}
+\cvlistitem{Sarah Habib. Undergraduate researcher (INCLUSION) in 2018, 2019.  Gauge invariant measurement of eccentricity in gravitational waves, implementing a method to reduce eccentricity in simulations using the Einstein Toolkit.}
+\cvlistitem{Nicolas White. Undergraduate researcher (INCLUSION) in 2018.  Incorporating the ENIGMA gravitational wave model into LALsuite.}
+\cvlistitem{Debopam Sanyal. Undergraduate researcher (SPIN) in 2018. Comparing methods to extrapolate gravitational waves to Scri+}
+\cvlistitem{Vedant Puri. Undergraduate researcher (SPIN) in 2017. Testing Scheduled Jacobi Relaxation methods for use in the Einstein Toolkit.}
+\cvlistitem{Sibo Wang. Undergraduate researcher (SPIN) in 2017. Project: Using the Adams-Bashforth timestepper in Cactus.}
+\cvlistitem{Pablo Brubeck. Undergraduate research fellow in 2017. Project: Producing initial data for Cactus using LORENE.}
+\cvlistitem{Nikita Jain. Undergraduate researcher (SPIN) in 2017. Project: A GPU accelerated BSSN using GAMER.}
+\cvlistitem{Daniel Johnson. Undergraduate researcher in 2017. Python Open-source Waveform ExtractoR: An open source, python package to monitor and post-process numerical relativity simulations.}
+\cvlistitem{Wei Ren. Undergraduate researcher in 2017. Project: Extrapolating gravitational waves produced by the Einstein Toolkit to Scri+.}
+\cvlistitem{Dhara Mehta. Undergraduate researcher (SPIN) in 2017. Project: Automatically prune and archive simulation results produced by the Einstein Toolkit.}
+\cvlistitem{Cutter Coryell. Summer Undergraduate Research Fellowship (SURF) student in 2013.  Project: Testing Fully Dynamical Adaptive Mesh Refinement in the Einstein Toolkit.}
+\cvlistitem{Cheol Woo (Peter) Park. Summer Undergraduate Research Fellowship (SURF) student in 2012. Project: black hole perturbation theory and white dwarf disruption by an intermediate mass black hole.}
+\cvlistitem{Hannah Klion. Summer Undergraduate Research Fellowship (SURF) student in 2012.  Project: Gravitational Waves from Rapidly Rotating Core-Collapse Supernovae.}
+
+\pagebreak
+\subsection{High-school Students}
+\cvlistitem{Adam Rebei. Interning high-school student. Project: Effect of higher order modes in gravitational waves of eccentric binary black hole mergers.}
 
 \section{Lectures}
-\cvlistitem{Tutorial session on using the Einstein Toolkit at the Einstein
-Toolkit workshop at Rochester, 2023.}
-\cvlistitem{Tutorial session on using the Einstein Toolkit at the Einstein
-Toolkit workshop at Dublin, 2022.}
-\cvlistitem{Tutorial session on using the Einstein Toolkit at the Numerical
-Relativity Summer School at ICERM, 2022.}
-\cvlistitem{Tutorial session on using the Einstein Toolkit at the Einstein
-Toolkit workshop at UIdaho, 2022.}
-\cvlistitem{Tutorial session on using the Einstein Toolkit at the Einstein
-Toolkit workshop at LSU, 2020.}
-\cvlistitem{Tutorial session on using the Einstein Toolkit at the Einstein
-Toolkit workshop at RIT, 2019.}
-\cvlistitem{Lecture on using MPI and OpenMP at the PIRE Winter School at the
-University of Arizona, 2018.}
-\cvlistitem{Tutorial session on using adaptive mesh refinement at the EU
-Einstein Toolkit workshop in Lisbon, Portugal, 2018.}
-\cvlistitem{Tutorial session on writing an analysis module at the Spring
-Einstein Toolkit workshop attached to the April APS meeting in Atlanta, 2012.}
-\cvlistitem{Tutorial session and introduction to the Einstein Toolkit at the
-Summer Einstein Toolkit
-workshop at the Caltech Gravitational-Wave Astrophysics School 2013.}
+\cvlistitem{Tutorial session on compiling the Einstein Toolkit at the Einstein Toolkit workshop at Lousiana State University, 2024.}
+\cvlistitem{Tutorial session on using the Einstein Toolkit at the Einstein Toolkit workshop at Rochester, 2023.}
+\cvlistitem{Tutorial session on using the Einstein Toolkit at the Einstein Toolkit workshop at Dublin, 2022.}
+\cvlistitem{Tutorial session on using the Einstein Toolkit at the Numerical Relativity Summer School at ICERM, 2022.}
+\cvlistitem{Tutorial session on using the Einstein Toolkit at the Einstein Toolkit workshop at UIdaho, 2022.}
+\cvlistitem{Tutorial session on using the Einstein Toolkit at the Einstein Toolkit workshop at LSU, 2020.}
+\cvlistitem{Tutorial session on using the Einstein Toolkit at the Einstein Toolkit workshop at RIT, 2019.}
+\cvlistitem{Tutorial session on using Python in HPC at the Blue Waters Symposium at Sunriver Resort, Sunriver, OR, 2019.}
+\cvlistitem{Lecture on using MPI and OpenMP at the PIRE Winter School at the University of Arizona, 2018.}
+\cvlistitem{Tutorial session on using adaptive mesh refinement at the EU Einstein Toolkit workshop in Lisbon, Portugal, 2018.}
+\cvlistitem{Tutorial session on using Jupyter notebooks at the Blue Waters Symposium at Sunriver Resort, Sunriver, OR, 2018.}
+\cvlistitem{Tutorial session on writing an analysis module at the Spring Einstein Toolkit workshop attached to the April APS meeting in Atlanta, 2012.}
+\cvlistitem{Tutorial session and introduction to the Einstein Toolkit at the Summer Einstein Toolkit workshop at the Caltech Gravitational-Wave Astrophysics School 2013.}
 
 \section{Invited talks}
-\cvlistitem{``Gravitational and electromagnetic signatures from the tidal
-disruption of stars'', Caltech, Pasadena, CA. CaJAGWR Seminars. April, 2012.}
-\cvlistitem{``Three-Dimensional General-Relativistic Hydrodynamic Simulations
-of Binary Neutron Star Coalescence and Stellar Collapse with Multipatch
-Grids'', UIUC, Urbana-Champaign, IL.  Theoretical Astrophysics and General
-Relativity Seminar. April, 2013. }
-\cvlistitem{``Core collapse and binary neutron star inspiral
-simulation using multipatch grids'',
-University of Southampton, Southampton, UK. Gravity Seminar.
-February, 2015.}
-\cvlistitem{``Update on binary neutron star merger simulations'',
-Max-Planck-Institute for Gravitational Physics, Golm, Germany. AEI Seminar.
-April, 2016. }
-\cvlistitem{``Simulating multi-physics astrophysical problems using
-current and future codes'',
-Leibnitz Rechenzentrum, Garching, Germany. ExaHYPe collaboration meeting.
-April, 2017. }
-\cvlistitem{``Update on binary neutron star merger simulations'',
-Goethe-University, Frankfurt, Germany. Astro coffee.
-April, 2017. }
-\cvlistitem{``Community astrophysics science with the Einstein Toolkit'',
-UIUC, Urbana-Champaign, IL. Theoretical Astrophysics and General Relativity Seminar.
-September, 2017. }
-\cvlistitem{``Assessing confidence in numerical relativity waveforms of
-binary neutron star mergers'', Nikhef, Amsterdam, Netherlands. Seminar talk.
-September, 2018. }
-\cvlistitem{``Present and future astrophysics simulations using the Einstein
-Toolkit'', University of Wyoming, WY,  Colloquium presentation.  December,
-2021. }
-\cvlistitem{``Using computational physics to study relativity and more'',
-University of Guelph, ON,  Colloquium presentation.  September, 2023. }
+\cvlistitem{``Using computational physics to study relativity and more'', University of Guelph, ON,  Colloquium presentation.  September, 2023. }
+\cvlistitem{``Present and future astrophysics simulations using the Einstein Toolkit'', University of Wyoming, WY,  Colloquium presentation.  December, 2021. }
+\cvlistitem{``Assessing confidence in numerical relativity waveforms of binary neutron star mergers'', Nikhef, Amsterdam, Netherlands. Seminar talk.  September, 2018. }
+\cvlistitem{``Community astrophysics science with the Einstein Toolkit'', UIUC, Urbana-Champaign, IL. Theoretical Astrophysics and General Relativity Seminar.  September, 2017. }
+\cvlistitem{``Update on binary neutron star merger simulations'', Goethe-University, Frankfurt, Germany. Astro coffee.  April, 2017.}
+\cvlistitem{``Simulating multi-physics astrophysical problems using current and future codes'', Leibnitz Rechenzentrum, Garching, Germany. ExaHYPe collaboration meeting.  April, 2017. }
+\cvlistitem{``Update on binary neutron star merger simulations'', Max-Planck-Institute for Gravitational Physics, Golm, Germany. AEI Seminar.  April, 2016. }
+\cvlistitem{``Core collapse and binary neutron star inspiral simulation using multipatch grids'', University of Southampton, Southampton, UK. Gravity Seminar.  February, 2015.}
+\cvlistitem{``Three-Dimensional General-Relativistic Hydrodynamic Simulations of Binary Neutron Star Coalescence and Stellar Collapse with Multipatch Grids'', UIUC, Urbana-Champaign, IL.  Theoretical Astrophysics and General Relativity Seminar. April, 2013. }
+\cvlistitem{``Gravitational and electromagnetic signatures from the tidal disruption of stars'', Caltech, Pasadena, CA. CaJAGWR Seminars. April, 2012.}
 
-\newpage
 \section{Contributed talks and posters}
-\cvlistitem{``HydroOpenMPToy status'', King's College London, London, UK.
-Einstein Toolkit Workshop. September, 2019}
-
-\cvlistitem{``The NCSA eccentric gravitational waveform
-catalog'', Denver, Colorado. APS April Meeting. April, 2019}
-
-\cvlistitem{``The NCSA eccentric gravitational waveform
-catalog'', Denver, CO. APS April Meeting. April, 2019}
-
-\cvlistitem{``BOSS-LDG using Blue Waters for LIGO data analysis'',  Columbus,
-OH. APS April Meeting. April, 2018}
-
-\cvlistitem{``Assessing confidence in numerical relativity waveforms of
-binary neutron star mergers'',  Columbus, Ohio. APS April Meeting. April, 2018}
-
-\cvlistitem{``HydroOpenMPToy status'', University des Illes Baleares, Palma,
-Spain. Einstein Toolkit Workshop. October 2017.}
-
-\cvlistitem{``Neutron star simulations with SpEC'', University of Stockholm,
-Stockholm, Sweden. MICRA meeting. August, 2015}
-
-\cvlistitem{``Postprocrocessing data in Cactus'', University of Stockholm,
-Stockholm, Sweden. Einstein Toolkit Workshop. June, 2015}
-
-\cvlistitem{``Binary Neutron Star simulations using SpEC'', University of
-Thessaloniki, Thessaloniki, Greece. Workshop on Binary Neutron Star Mergers.
-May, 2015}
-
-\cvlistitem{``Binary Neutron Star simulations using SpEC'', UCSD, San Diego,
-CA. Pacific Coast Gravity Meeting. March, 2014}
-
-\cvlistitem{``Binary Neutron Star simulations using SpEC'', Savannah, GA. APS
-April Meeting. April, 2014}
-
-\cvlistitem{``Self-force driven inspiral of a scalar point
-particle into a Schwarzschild black hole'', UCLA, Los Angeles, CA. TASC
-Meeting 2013. December, 2013}
-
-\cvlistitem{``Binary NS simulations using SpEC'', Uniwersytet Warszawski,
-Warsaw, Poland. Amaldi meeting. July, 2013}
-
-\cvlistitem{``Binary NS simulations using SpEC'', Denver, CO. APS April
-Meeting. April, 2013}
-
-\cvlistitem{``Binary NS simulations using SpEC'', UCD, Davis, CA. Pacific
-Coast Gravity Meeting. March, 2013}
-
-\cvlistitem{``Binary NS simulations using SpEC'', Carnegie Observatories,
-Pasadena, CA. TASC Meeting 2012. November, 2012}
-
-\cvlistitem{``Self-force driven inspiral of a scalar point
-particle into a Schwarzschild black hole: a
-progress report'', University of Maryland, Collega Park, MD. Capra Meeting on
-Radiation Reaction in General Relativity. June, 2012}
-
-\cvlistitem{``Progress report: Binary NS simulations using SpEC'', Atlanta,
-GA. APS April Meeting. April, 2012}
-
-\cvlistitem{``Self-force driven inspiral of a scalar point particle into a
-Schwarzschild black hole'', UCSB, Sata-Barbara, CA. Pacific Coast Gravity
-Meeting. March, 2012}
-
-\cvlistitem{``Gravitational and Electromagnetic Signatures from the Tidal
-Disruption of a White Dwarf by an Intermediate Mass Black Hole'', Florida
-Atlantic University. Boca Raton, FL. Gulf Coast Gravity Meeting. May, 2011}
-
-\cvlistitem{``Gravitational and Electromagnetic Signatures from the Tidal
-Disruption of a White Dwarf by an Intermediate Mass Black Hole'', Anaheim, CA.
-APS April Meeting. May, 2011}
-
-\cvlistitem{``Progress Report: Gravitational and Electromagnetic Signatures
-from Tidal Disruption of a White Dwarf by an Intermediate Mass Black Hole'',
-North Carolina State University, Raleigh, NC. Eastern Gravity Meeting. May,
-2010}
-
-\cvlistitem{``Gravitational and Electromagnetic Signatures from the Tidal
-Disruption of a White Dwarf by an Intermediate Mass Black Hole'', Washington,
-DC. APS April Meeting. February, 2010}
-
-\cvlistitem{``Black Hole - Neutron Star Binary Simulations at Georgia Tech'',
-Louisiana State University, Baton Rouge, LA. Gulf Coast Gravity Meeting.
-April, 2009}
-
-\cvlistitem{``Electromagnetic self-force for eccentric orbits in Schwarzschild
-spacetime'', CNRS, Orleans, France. Capra meeting on Radiation Reaction, June,
-2008}
-
-\cvlistitem{``Electromagnetic self-force for eccentric orbits in Schwarzschild
-spacetime: A progress report'', St. Louis University, St Louis, MO. Midwest
-Relativity Meeting, November, 2007}
-
-\cvlistitem{``Scalar self-force for eccentric orbits in Schwarzschild
-spacetime'', University of Alabama, Huntsville, AL. Capra meeting on Radiation
-Reaction, June, 2007}
-
-\cvlistitem{``Scalar self-force for eccentric orbits in Schwarzschild
-spacetime'',  University of New Brunswick, Fredericton, NB. Canadian
-Conference on General Relativity and Relativistic Astrophysics, May, 2007}
-
-\cvlistitem{``Scalar self-force for eccentric orbits in Schwarzschild
-spacetime'', Washington University, St Louis, MO. Midwest Relativity Meeting,
-November, 2006}
+\cvlistitem{``Astrophysics simulations using the Einstein Toolkit'', University of Illinois, Urbana-Champaign, IL. AstroFest, 2024}
+\cvlistitem{``HydroOpenMPToy status'', King's College London, London, UK.  Einstein Toolkit Workshop. September, 2019}
+\cvlistitem{``Deep Learning at Scale: A Paradigm Shift for Multi-Messenger Astrophysics'', Sunriver, Oregon. APS April Meeting. June, 2019}
+\cvlistitem{``The NCSA eccentric gravitational waveform catalog'', Denver, CO. APS April Meeting. April, 2019}
+\cvlistitem{``Multimessenger Astronomy at the University of Illinois'', Sunriver, Oregon. Blue Waters Symposium. June, 2018}
+\cvlistitem{``Magnetic Field Amplification in Binary Neutron Star Merger Remnants'', Sunriver, Oregon. Blue Waters Symposium. June, 2018}
+\cvlistitem{``Multimessenger Astronomy at the University of Illinois'', Sunriver, Oregon. Blue Waters Symposium. June, 2018}
+\cvlistitem{``BOSS-LDG using Blue Waters for LIGO data analysis'',  Columbus, OH. APS April Meeting. April, 2018}
+\cvlistitem{``Assessing confidence in numerical relativity waveforms of binary neutron star mergers'',  Columbus, Ohio. APS April Meeting. April, 2018}
+\cvlistitem{``HydroOpenMPToy status'', University des Illes Baleares, Palma, Spain. Einstein Toolkit Workshop. October 2017.}
+\cvlistitem{``Benchmarking Parallelized File Aggregation Tools for Large Scale Data Management'', Denver, CO. Supercomputing 2017, November 2017.}
+\cvlistitem{``Neutron star simulations with SpEC'', University of Stockholm, Stockholm, Sweden. MICRA meeting. August, 2015}
+\cvlistitem{``Postprocrocessing data in Cactus'', University of Stockholm, Stockholm, Sweden. Einstein Toolkit Workshop. June, 2015}
+\cvlistitem{``Binary Neutron Star simulations using SpEC'', University of Thessaloniki, Thessaloniki, Greece. Workshop on Binary Neutron Star Mergers.  May, 2015}
+\cvlistitem{``Binary Neutron Star simulations using SpEC'', UCSD, San Diego, CA. Pacific Coast Gravity Meeting. March, 2014}
+\cvlistitem{``Binary Neutron Star simulations using SpEC'', Savannah, GA. APS April Meeting. April, 2014}
+\cvlistitem{``Self-force driven inspiral of a scalar point particle into a Schwarzschild black hole'', UCLA, Los Angeles, CA. TASC Meeting 2013. December, 2013}
+\cvlistitem{``Binary NS simulations using SpEC'', Uniwersytet Warszawski, Warsaw, Poland. Amaldi meeting. July, 2013}
+\cvlistitem{``Binary NS simulations using SpEC'', Denver, CO. APS April Meeting. April, 2013}
+\cvlistitem{``Binary NS simulations using SpEC'', UCD, Davis, CA. Pacific Coast Gravity Meeting. March, 2013}
+\cvlistitem{``Binary NS simulations using SpEC'', Carnegie Observatories, Pasadena, CA. TASC Meeting 2012. November, 2012}
+\cvlistitem{``Self-force driven inspiral of a scalar point particle into a Schwarzschild black hole: a progress report'', University of Maryland, Collega Park, MD. Capra Meeting on Radiation Reaction in General Relativity. June, 2012}
+\cvlistitem{``Progress report: Binary NS simulations using SpEC'', Atlanta, GA. APS April Meeting. April, 2012}
+\cvlistitem{``Self-force driven inspiral of a scalar point particle into a Schwarzschild black hole'', UCSB, Sata-Barbara, CA. Pacific Coast Gravity Meeting. March, 2012}
+\cvlistitem{``Gravitational and Electromagnetic Signatures from the Tidal Disruption of a White Dwarf by an Intermediate Mass Black Hole'', Florida Atlantic University. Boca Raton, FL. Gulf Coast Gravity Meeting. May, 2011}
+\cvlistitem{``Gravitational and Electromagnetic Signatures from the Tidal Disruption of a White Dwarf by an Intermediate Mass Black Hole'', Anaheim, CA.  APS April Meeting. May, 2011}
+\cvlistitem{``Progress Report: Gravitational and Electromagnetic Signatures from Tidal Disruption of a White Dwarf by an Intermediate Mass Black Hole'', North Carolina State University, Raleigh, NC. Eastern Gravity Meeting. May, 2010}
+\cvlistitem{``Gravitational and Electromagnetic Signatures from the Tidal Disruption of a White Dwarf by an Intermediate Mass Black Hole'', Washington, DC. APS April Meeting. February, 2010}
+\cvlistitem{``Black Hole - Neutron Star Binary Simulations at Georgia Tech'', Louisiana State University, Baton Rouge, LA. Gulf Coast Gravity Meeting.  April, 2009}
+\cvlistitem{``Electromagnetic self-force for eccentric orbits in Schwarzschild spacetime'', CNRS, Orleans, France. Capra meeting on Radiation Reaction, June, 2008}
+\cvlistitem{``Electromagnetic self-force for eccentric orbits in Schwarzschild spacetime: A progress report'', St. Louis University, St Louis, MO. Midwest Relativity Meeting, November, 2007}
+\cvlistitem{``Scalar self-force for eccentric orbits in Schwarzschild spacetime'', University of Alabama, Huntsville, AL. Capra meeting on Radiation Reaction, June, 2007}
+\cvlistitem{``Scalar self-force for eccentric orbits in Schwarzschild spacetime'',  University of New Brunswick, Fredericton, NB. Canadian Conference on General Relativity and Relativistic Astrophysics, May, 2007}
+\cvlistitem{``Scalar self-force for eccentric orbits in Schwarzschild spacetime'', Washington University, St Louis, MO. Midwest Relativity Meeting, November, 2006}
 
 \begin{thebibliography}{99}
 % https://ui.adsabs.harvard.edu/user/libraries/pzWebybvThCQyfOW6CVxrA
+% https://ui.adsabs.harvard.edu/search/q=orcid%3A0000-0003-1424-6178&sort=date%20desc%2C%20bibcode%20desc/export-other
 % format used:
 % %ZEncoding:latex%ZLinelength:0\bibitem{%R} %5.3l, ``%T,'' %j, %V, %p (%Y).
 \item[] \begin{tabular}{l@{\hspace{4ex}}r@{\hspace{4ex}}r@{\hspace{4ex}}r}
 		&\href{https://www.scopus.com/authid/detail.uri?authorId=36084420600}{Scopus}
 		&\href{https://scholar.google.com/citations?user=rZj1mR8AAAAJ}{Google Scholar}
-		&\ldots since 2018\\
+		&\ldots since 2020\\
 \hline
-Citations	&4063	&6015	&4319\\
-h-index		&61	&40	&35\\
-i10-index	&N/A	&56	&54\\
+Citations	&4994	&7617	&4566\\
+h-index		&38	&43	&34\\
+i10-index	&N/A	&66	&63\\
 \end{tabular}
+
+legend: \underline{student supervised}, ($*$) - more than 100 citations
 \input{allpub.tex}
 \end{thebibliography}
 
